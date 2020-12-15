@@ -1,9 +1,12 @@
 import React from 'react';
+import { Poster, Products, Footer } from '../../components';
 
 const Home = () => {
   return (
-    <div>
-      <h1>Home</h1>
+    <div className="background-home">
+      <Poster />
+      <Products />
+      <Footer />
     </div>
   );
 };

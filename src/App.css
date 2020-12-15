@@ -1,4 +1,12 @@
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@700&display=swap');
+
+body{
+  background-color: #FAFCF0;
+}
 .App {
+  background-color: #FAFCF0;
   text-align: center;
 }
 
@@ -36,3 +44,95 @@
     transform: rotate(360deg);
   }
 }
+
+.header{
+  background-color: #1d3136;
+  position: fixed;
+  width: 100%;
+  top: 0%;
+  z-index: 1;
+}
+
+.menu{
+  display:inline-block;
+  padding: 20px;
+  color: white;
+}
+.menu:hover{
+background-color: white;
+color: green;
+}
+
+
+
+
+
+/* ini untuk home */
+
+
+
+.navbar-farm{
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+}
+.brand-text-icon {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 63px;  
+  font-family: Poppins, sans-serif;
+  color: #218661 ;
+ 
+}
+.text-icon {
+
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 27px;  
+  font-family: Poppins, sans-serif;
+  color: #9A9C90;
+ 
+}
+.margin-hero {
+  padding-top:150px ;
+}
+.background-home{
+  background-color: #FAFCF0;
+}
+
+.all-title{
+  font-family: Chivo,sans-serif;
+}
+
+.product{
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  min-height: 387px;
+}
+.name-product{
+  padding: 0;
+  font-family: Chivo,sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: #218661;
+
+}
+.price-product{
+  padding: 0px;
+  font-family: Chivo,sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #218661;
+  
+}
+.loc-product{
+  padding: 0px;
+  font-family: Poppins,sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #4DAC8A;
+  
+}
+
+
+
