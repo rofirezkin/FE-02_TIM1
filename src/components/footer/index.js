@@ -1,10 +1,10 @@
 import React from 'react';
 import { logo } from '../../assets';
 
-export default function Footer() {
+export default function Bawah() {
   const penjual = ['Buat Akun', ' Upload Produk', 'Hapus Produk'];
   return (
-    <footer style={{ borderTop: '1px solid #E5E5E5', bottom: 0 }}>
+    <div style={{ borderTop: '1px solid #E5E5E5', bottom: 0 }}>
       <div className="container my-5">
         <div className="row  justify-content-md-center">
           <div className="col-sm-4">
@@ -42,6 +42,6 @@ export default function Footer() {
           Copyright 2019 • All rights reserved • Staycation
         </h3>
       </div>
-    </footer>
+    </div>
   );
 }

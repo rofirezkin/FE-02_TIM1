@@ -5,14 +5,13 @@ import { logo, account, keranjang } from '../../assets';
 const Header = () => {
   return (
     <nav className="navbar navbar-light fixed-top bg-white navbar-farm mb-5">
-      <Link to="dashboard">
+      <Link
+        to="/"
+        type="button"
+        style={{ border: 'none', backgroundColor: 'white' }}
+      >
         <div className="navbar-brand container">
-          <button
-            type="button"
-            style={{ border: 'none', backgroundColor: 'white' }}
-          >
-            <img src={logo} alt="logo" />
-          </button>
+          <img src={logo} alt="logo" />
         </div>
       </Link>
       <form className="form-inline">

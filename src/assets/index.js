@@ -6,3 +6,6 @@ export { default as account } from './images/mdi_account_circle.png';
 export { default as hero1 } from './images/hero1.png';
 export { default as hero2 } from './images/hero2.jpg';
 export { default as produk } from './images/brokoli 1.jpg';
+export { default as success } from './images/success.svg';
+
+// Json

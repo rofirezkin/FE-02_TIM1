@@ -1,12 +1,12 @@
 import React from 'react';
-import { Poster, Products, Footer } from '../../components';
+import { Poster, Products, Bawah } from '../../components';
 
 const Home = () => {
   return (
     <div className="background-home">
       <Poster />
       <Products />
-      <Footer />
+      <Bawah />
     </div>
   );
 };

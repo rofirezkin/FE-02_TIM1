@@ -22,7 +22,7 @@ function setCookie(cname, cvalue, exdays) {
 }
 
 const isUserAuthenticated = () => {
-  if (getCookie('token')) return true;
+  if (getCookie('data')) return true;
   return false;
 };
 

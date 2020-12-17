@@ -1,0 +1,64 @@
+{
+    "lists": [ {
+            "number": 1,
+            "title": "brokoli",
+            "description":
+                "Brokoli dengan kualitas terbaik dan di panen langsung dari petani",
+           " price": "15.000"
+           
+        },
+        {
+            "number": 2,
+            "title": "Buah Melon",
+            "description":
+                "Melon madu dengan rasa manis yang khas dan produk terbaik",
+           " price": "15.000"
+           
+        },
+        {
+            "number": 3,
+            "title": "Wortel",
+            "description":
+                "Wortel dengan kualitas yang baik dan segar dengan hidroponik",
+           " price": "15.000"
+           
+        },
+        {
+            "number": 4,
+            "title": "Tomat Besar",
+            "description": "Tomat berkualitas terbaik dan bisa memuaskan pelanggan",
+           " price": "15.000"
+           
+        },
+        {
+            "number": 5,
+            "title": "Tomat Besar",
+            "description": "Tomat berkualitas terbaik dan bisa memuaskan pelanggan",
+           " price": "15.000"
+           
+        },
+
+        {
+            "number": 6,
+            "title": "Tomat Besar",
+            "description": "Tomat berkualitas terbaik dan bisa memuaskan pelanggan",
+           " price": "15.000"
+           
+        },
+        {
+            "number": 7,
+            "title": "Tomat Besar",
+            "description": "Tomat berkualitas terbaik dan bisa memuaskan pelanggan",
+           " price": "15.000"
+           
+        },
+        {
+            "number": 8,
+            "title": "Tomat Besar",
+            "description": "Tomat berkualitas terbaik dan bisa memuaskan pelanggan",
+           " price": "15.000"
+           
+        }
+    ]
+}
+
