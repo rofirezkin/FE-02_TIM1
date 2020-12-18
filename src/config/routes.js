@@ -1,4 +1,5 @@
 import { Home, DetailProduct, Pembayaran, Success } from '../pages';
+import Login from '../pages/login';
 
 const routes = [
   {
@@ -14,6 +15,12 @@ const routes = [
   {
     path: '/product/:numberId',
     component: DetailProduct,
+    isPublic: true,
+  },
+
+  {
+    path: '/login',
+    component: Login,
     isPublic: true,
   },
 
