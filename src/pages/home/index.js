@@ -1,11 +1,12 @@
 import React from 'react';
-import { Poster, Products, Footer } from '../../components';
+import { Products, Footer } from '../../components';
+import TabelKomponen from '../../components/table/table';
 
 const Home = () => {
   return (
     <div className="background-home">
-      <Poster />
       <Products />
+      <TabelKomponen />
       <Footer />
     </div>
   );
