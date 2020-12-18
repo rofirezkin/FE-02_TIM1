@@ -1,4 +1,6 @@
 import { Home, DetailProduct, Pembayaran, Success } from '../pages';
+import Login from '../pages/login';
+import Registrasi from '../pages/registrasi';
 
 const routes = [
   {
@@ -14,6 +16,17 @@ const routes = [
   {
     path: '/product/:numberId',
     component: DetailProduct,
+    isPublic: true,
+  },
+
+  {
+    path: '/login',
+    component: Login,
+    isPublic: true,
+  },
+  {
+    path: '/regist',
+    component: Registrasi,
     isPublic: true,
   },
 
