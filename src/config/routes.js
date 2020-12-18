@@ -1,6 +1,11 @@
-import { Home } from '../pages';
+import { Home, AdminPage } from '../pages';
 
 const routes = [
+  {
+    path: '/adminPage',
+    component: AdminPage,
+    isPublic: true,
+  },
   {
     path: '/',
     component: Home,
