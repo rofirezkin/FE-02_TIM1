@@ -1,7 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function PerProduct({ data }) {
+function PerProduct({ data, loading }) {
+  if (loading) {
+    return <h2>Loading....</h2>;
+  }
   return (
     <div className="col-sm-3 text-center mb-5">
       <Link to={`/product/${data.number}`}>
@@ -11,9 +14,6 @@ function PerProduct({ data }) {
           <p className="price-product">Rp16.000/Kg </p>
           <p className="loc-product">Bandung</p>
           <div className="row justify-content-md-center px-2 pb-3">
-            <div className="col-4">
-              <input type="text" className="form-control" />
-            </div>
             <button type="button" className="btn btn-success">
               Add To Cart
             </button>
