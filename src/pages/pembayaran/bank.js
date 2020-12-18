@@ -57,10 +57,7 @@ function Bank({ dataJumlah, kalkulasi }) {
           </div>
           <div className="col-sm-6 bg-white ">
             <h3>Total Harga</h3>
-            <h4>
-              {dataJumlah}
-              .000
-            </h4>
+            <h4>{dataJumlah}</h4>
             <Link to={`/product/pembayaran/${kalkulasi}/success`}>
               <h6 type="button" className="btn btn-success">
                 Pesan Produk

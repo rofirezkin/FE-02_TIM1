@@ -1,4 +1,7 @@
 export default {
   LOGIN: '/login',
-  PRODUCT: '/petani',
+  PRODUCT: '/hasil_tani',
+  PRODUCTBYID: (productId) => {
+    return `/hasil_tani/${productId}`;
+  },
 };

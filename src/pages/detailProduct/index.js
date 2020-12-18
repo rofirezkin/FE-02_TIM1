@@ -1,27 +1,41 @@
+/* eslint no-underscore-dangle: ["error", { "allow": ["_id"] }] */
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import DataProduk from '../../assets/dummy';
+// mport { produk } from '../../assets';
+
+// import DataProduk from '../../assets/dummy';
+import { getProducts } from '../../services';
 import Detail from './detail';
 import './styleProduct.css';
 
 const DetailProduct = () => {
   const [infoProduk, setInfoProduk] = useState([]);
+  // const [listPetani, setListPetani] = useState([]);
   const params = useParams();
   const { numberId } = params;
 
+  console.log('product id', numberId);
   useEffect(() => {
-    const filterNews = DataProduk.filter((resp) => {
-      return resp.number === numberId;
-    });
-
-    setInfoProduk(filterNews);
+    getProducts
+      .getProductId(numberId)
+      .then((res) => {
+        console.log('ini data rest', res);
+        setInfoProduk(res);
+      })
+      .catch((err) => {
+        return console.log(err);
+      })
+      .finally(() => {
+        console.log('setinfo', infoProduk);
+      });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [numberId]);
+
+  console.log('info produk', infoProduk);
 
   return (
     <div className="mt-5 container margin-hero">
-      {infoProduk.map((data) => {
-        return <Detail key={data.number} data={data} />;
-      })}
+      <Detail key={infoProduk._id} data={infoProduk} />
     </div>
   );
 };

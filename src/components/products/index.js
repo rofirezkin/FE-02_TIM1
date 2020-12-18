@@ -22,7 +22,7 @@ const Products = () => {
 
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
-  const currentPosts = DataProduk.slice(indexOfFirstPost, indexOfLastPost);
+  const currentPosts = listPetani.slice(indexOfFirstPost, indexOfLastPost);
   const paginate = (pageNumber) => {
     return setCurrentPage(pageNumber);
   };
