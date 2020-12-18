@@ -1,5 +1,5 @@
 import React from 'react';
-import { herologin } from '../../assets';
+import { herologin, logo } from '../../assets';
 
 const Form = () => {
   return (
@@ -12,8 +12,18 @@ const Form = () => {
               <img src={herologin} alt="banner" />
             </div>
           </div>
-          <div className="col-sm-6 pl-4">
-            <div>
+          <div className="pl-4 col-sm-4 text-center text-icon">
+            <div
+              className="card"
+              style={{ width: '28.375 rem', height: '33.188 rem' }}
+            >
+              <img src={logo} alt="banner" />
+              <p>Belum punya akun? </p>
+              <button type="button" className="btn btn-link">
+                {' '}
+                Daftar disini
+                {' '}
+              </button>
               <form>
                 <label htmlFor="username">
                   Username :
@@ -23,7 +33,11 @@ const Form = () => {
                   Password :
                   <input type="text" />
                 </label>
-                <input type="submit" value="submit" />
+                <input
+                  type="submit"
+                  value="Submit"
+                  className="btn btn-success"
+                />
               </form>
             </div>
           </div>
