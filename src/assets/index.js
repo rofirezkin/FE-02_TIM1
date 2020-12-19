@@ -9,5 +9,7 @@ export { default as produk } from './images/brokoli 1.jpg';
 export { default as success } from './images/success.svg';
 export { default as herologin } from './images/loginn.png';
 export { default as heroregist } from './images/regist.png';
-
+export { default as tambah } from './images/add.svg';
+export { default as setting } from './images/mdi_settings.png';
+export { default as tambahProduct } from './images/tambah.png';
 // Json

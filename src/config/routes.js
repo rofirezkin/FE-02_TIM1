@@ -1,4 +1,12 @@
-import { Home, DetailProduct, Pembayaran, Success } from '../pages';
+import {
+  Home,
+  DetailProduct,
+  Pembayaran,
+  Success,
+  TambahProduk,
+  AdminPage,
+  PenjualPage,
+} from '../pages';
 import Login from '../pages/login';
 import Registrasi from '../pages/registrasi';
 
@@ -6,6 +14,11 @@ const routes = [
   {
     path: '/product/pembayaran/:kalkulasi/success',
     component: Success,
+    isPublic: true,
+  },
+  {
+    path: '/petani/:petaniId',
+    component: PenjualPage,
     isPublic: true,
   },
   {
@@ -27,6 +40,16 @@ const routes = [
   {
     path: '/regist',
     component: Registrasi,
+    isPublic: true,
+  },
+  {
+    path: '/admin',
+    component: AdminPage,
+    isPublic: true,
+  },
+  {
+    path: '/tambah_produk',
+    component: TambahProduk,
     isPublic: true,
   },
 

@@ -135,4 +135,22 @@ color: green;
 }
 
 
+/* Tambahan admin */
 
+.card-person {
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  min-height: 157px;
+}
+
+.card-category {
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  min-height: 100px;
+}
+
+.loading{
+  min-height: 1000px;
+}

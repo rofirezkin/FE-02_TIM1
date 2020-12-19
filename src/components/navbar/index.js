@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { logo, account, keranjang } from '../../assets';
+import { logo, account, tambah } from '../../assets';
 
 const Header = () => {
   return (
@@ -26,18 +26,23 @@ const Header = () => {
         </button>
       </form>
       <div>
-        <button
-          type="button"
-          style={{ border: 'none', backgroundColor: 'white' }}
-        >
-          <img src={keranjang} alt="logo" />
-        </button>
-        <button
-          type="button"
-          style={{ border: 'none', backgroundColor: 'white' }}
-        >
-          <img src={account} alt="logo" />
-        </button>
+        <Link to="tambah_produk">
+          <button
+            type="button"
+            style={{ border: 'none', backgroundColor: 'white' }}
+          >
+            <img src={tambah} alt="logo" width="70%" />
+          </button>
+        </Link>
+
+        <Link to="login">
+          <button
+            type="button"
+            style={{ border: 'none', backgroundColor: 'white' }}
+          >
+            <img src={account} alt="logo" />
+          </button>
+        </Link>
       </div>
     </nav>
   );

@@ -5,20 +5,22 @@ import { getProducts } from '../../services';
 import { Pagination, Poster } from '../index';
 
 const Products = () => {
+  const [loading, setLoading] = useState(false);
   const [listPetani, setListPetani] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage] = useState(8);
 
   const getProduk = (namaProduct) => {
+    setLoading(true);
     getProducts.getProduct(namaProduct).then((res) => {
-      console.log('data keseluruhan', res);
       setListPetani(res);
+      setLoading(false);
     });
   };
   useEffect(() => {
+    setLoading(true);
     getProduk('');
   }, []);
-  console.log('hasill data', listPetani);
 
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
@@ -26,6 +28,17 @@ const Products = () => {
   const paginate = (pageNumber) => {
     return setCurrentPage(pageNumber);
   };
+  if (loading) {
+    return (
+      <div className="margin-hero text-center loading">
+        <h2>Loading....</h2>
+        <h2>Loading....</h2>
+        <h2>Loading....</h2>
+        <h2>Loading....</h2>
+        <h2>Loading....</h2>
+      </div>
+    );
+  }
 
   return (
     <div>
@@ -34,7 +47,9 @@ const Products = () => {
           <h2 className="py-4">Produk Segar Rekomendasi Untuk Anda</h2>
           <div className="row">
             {currentPosts.map((data) => {
-              return <PerProduct key={data.number} data={data} />;
+              return (
+                <PerProduct key={data.number} data={data} loading={loading} />
+              );
             })}
           </div>
           <Pagination
@@ -51,7 +66,9 @@ const Products = () => {
             <h2 className="py-4">Produk Segar Rekomendasi Untuk Anda</h2>
             <div className="row">
               {currentPosts.map((data) => {
-                return <PerProduct key={data.number} data={data} />;
+                return (
+                  <PerProduct key={data.number} data={data} loading={loading} />
+                );
               })}
             </div>
             <Pagination
